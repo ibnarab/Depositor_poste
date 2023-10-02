@@ -1,0 +1,44 @@
+##########################################################################
+# Parametrage du deploiement
+##########################################################################
+deploy:sujet:ttd
+deploy:instance.env.prd:aa
+deploy:instance.env.ppd:pp
+deploy:instance.env.dev:dv
+deploy:instance.env.int:in
+deploy:instance.env.rec:rc
+##########################################################################
+# Parametrage IDM
+##########################################################################
+idm:restricted:.technical=1
+idm:restricted:raw=1
+idm:restricted:safe=1
+idm:business:.model=0
+idm:business:optimized=0
+idm:business:work=0
+idm:business:discovery=0
+##########################################################################
+# Parametrage HDFS
+##########################################################################
+hdfs:restricted:.technical=1
+hdfs:restricted:raw=1
+hdfs:restricted:safe=1
+hdfs:business:.model=0
+hdfs:business:optimized=0
+hdfs:business:work=0
+hdfs:business:discovery=0
+##########################################################################
+# Parametrage HDFS : détail du raw
+##########################################################################
+hdfs_raw:compacted=1
+hdfs_raw:failed=1
+hdfs_raw:processed=1
+hdfs_raw:rejected=0
+hdfs_raw:to_process=1
+hdfs_raw:to_validate=1
+##########################################################################
+# Parametrage HIVE pour la partie metier
+##########################################################################
+hive:optimized=0
+hive:work=0
+hive:discovery=0
